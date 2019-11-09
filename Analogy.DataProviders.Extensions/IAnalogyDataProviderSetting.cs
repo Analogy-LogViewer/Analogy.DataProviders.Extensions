@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace Analogy.DataProviders.Extensions
 {
-    interface IAnalogyDataProviderSetting
+    public interface IAnalogyDataProviderSetting
     {
         string Title { get; }
         UserControl DataProviderSettings { get; }

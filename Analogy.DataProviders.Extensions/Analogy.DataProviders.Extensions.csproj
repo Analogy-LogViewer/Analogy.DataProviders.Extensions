@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GeneralFileParser.cs" />
     <Compile Include="IAnalogyDataProviderSetting.cs" />
     <Compile Include="LogParserSettings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

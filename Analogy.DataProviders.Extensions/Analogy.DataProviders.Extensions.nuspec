@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Analogy.DataProviders.Extensions</id>
-    <version>1.0.0</version>
+    <version>1.0.0.1</version>
     <title>Analogy Data Providers additional Functionality</title>
     <authors>Lior Banai</authors>
     <owners>Lior Banai</owners>
@@ -22,7 +22,7 @@
 </dependencies>
   </metadata>
   <files>
-    <file src="bin\Release\Analogy.DataProviders.Extensions.dll" target="lib\net472\Analogy.exe" />
+    <file src="bin\Release\Analogy.DataProviders.Extensions.dll" target="lib\net472\Analogy.DataProviders.Extensions.dll" />
 	<!-- <file src="icon.png" target="" /> -->
 </files>
 </package>

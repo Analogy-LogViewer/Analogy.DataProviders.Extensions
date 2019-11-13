@@ -13,4 +13,6 @@ namespace Analogy.DataProviders.Extensions
         UserControl DataProviderSettings { get; }
         System.Drawing.Image Icon { get; } 
     }
+
+
 }

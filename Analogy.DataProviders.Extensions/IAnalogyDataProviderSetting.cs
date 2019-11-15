@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -7,11 +8,13 @@ using System.Windows.Forms;
 
 namespace Analogy.DataProviders.Extensions
 {
-    public interface IAnalogyDataProviderSetting
+    public interface IAnalogyDataProviderSettings
     {
         string Title { get; }
         UserControl DataProviderSettings { get; }
-        System.Drawing.Image Icon { get; } 
+        Image Icon { get; } 
+
+        Task SaveSettingsAsync { get; set; }
     }
 
 

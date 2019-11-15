@@ -12,11 +12,12 @@ namespace Analogy.DataProviders.Extensions
     {
         private readonly ILogParserSettings _logFileSettings;
         public readonly string[] splitters;
+        public static string[] SplitterValues { get; }= {"#*#"};
 
         public GeneralFileParser(ILogParserSettings logFileSettings)
         {
             _logFileSettings = logFileSettings;
-            splitters = _logFileSettings.Splitter.Split();
+            splitters = _logFileSettings.Splitter.Split(SplitterValues, StringSplitOptions.None);
         }
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public AnalogyLogMessage Parse(string line)

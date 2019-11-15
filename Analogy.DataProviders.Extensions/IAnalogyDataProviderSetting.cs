@@ -12,9 +12,9 @@ namespace Analogy.DataProviders.Extensions
     {
         string Title { get; }
         UserControl DataProviderSettings { get; }
-        Image Icon { get; } 
+        Image Icon { get; }
 
-        Task SaveSettingsAsync { get; set; }
+        Task SaveSettingsAsync();
     }
 
 

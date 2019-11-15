@@ -43,6 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnalogyColumnsMatcherUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AnalogyColumnsMatcherUC.Designer.cs">
+      <DependentUpon>AnalogyColumnsMatcherUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralExtensionMethods.cs" />
     <Compile Include="GeneralFileParser.cs" />
     <Compile Include="IAnalogyDataProviderSetting.cs" />
     <Compile Include="LogParserSettings.cs" />
@@ -58,6 +65,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Analogy.DataProviders.Extensions.nuspec" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AnalogyColumnsMatcherUC.resx">
+      <DependentUpon>AnalogyColumnsMatcherUC.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

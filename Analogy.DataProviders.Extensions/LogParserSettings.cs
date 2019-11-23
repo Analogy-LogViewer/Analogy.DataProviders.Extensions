@@ -11,6 +11,10 @@ namespace Analogy.DataProviders.Extensions
 {
     public interface ILogParserSettings
     {
+        /// <summary>
+        /// The initial location of the log files.
+        /// </summary>
+        string Directory { get; set; }
         List<string> SupportedFilesExtensions { get; set; }
         bool IsConfigured { get; set; }
         string Splitter { get; set; }
@@ -27,6 +31,7 @@ namespace Analogy.DataProviders.Extensions
     [Serializable]
     public class LogParserSettings : ILogParserSettings
     {
+        public string Directory { get; set; }
         public List<string> SupportedFilesExtensions { get; set; }
         public bool IsConfigured { get; set; }
         public string Splitter { get; set; }
@@ -58,7 +63,7 @@ namespace Analogy.DataProviders.Extensions
 
         public bool CanOpenFile(string fileName)
         {
-            if (string.IsNullOrEmpty(fileName)) return false; 
+            if (string.IsNullOrEmpty(fileName)) return false;
             return SupportedFilesExtensions.Any(s => s.EndsWith(Path.GetExtension(fileName), StringComparison.InvariantCultureIgnoreCase));
         }
 

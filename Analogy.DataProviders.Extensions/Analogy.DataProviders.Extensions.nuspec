@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Analogy.DataProviders.Extensions</id>
-    <version>1.0.0.6</version>
+    <version>1.0.0.7</version>
     <title>Analogy Data Providers additional Functionality</title>
     <authors>Lior Banai</authors>
     <owners>Lior Banai</owners>

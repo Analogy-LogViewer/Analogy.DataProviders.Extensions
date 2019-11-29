@@ -67,9 +67,6 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Analogy.DataProviders.Extensions.nuspec" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="AnalogyColumnsMatcherUC.resx">
       <DependentUpon>AnalogyColumnsMatcherUC.cs</DependentUpon>
     </EmbeddedResource>

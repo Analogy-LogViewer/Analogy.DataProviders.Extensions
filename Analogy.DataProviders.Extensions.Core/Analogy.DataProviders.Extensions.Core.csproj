@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationIcon />
+    <StartupObject />
+    <AssemblyName>Analogy.DataProviders.Extensions</AssemblyName>
+    <RootNamespace>Analogy.DataProviders.Extensions</RootNamespace>
+    <Version>1.0.0.8</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Analogy_logo1.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Analogy_logo1.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Analogy.LogViewer.Interfaces" Version="2.1.5.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="AnalogyColumnsMatcherUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="AnalogyColumnsMatcherUC.Designer.cs">
+      <DependentUpon>AnalogyColumnsMatcherUC.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="AnalogyColumnsMatcherUC.resx">
+      <DependentUpon>AnalogyColumnsMatcherUC.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

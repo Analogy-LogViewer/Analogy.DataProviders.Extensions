@@ -1,2 +1,2 @@
-# Analogy.DataProviders.Extensions             [![NuGet](Assets/nuget.svg)](https://www.nuget.org/packages/Analogy.DataProviders.Extensions/)
+# Analogy.DataProviders.Extensions             [![NuGet](Assets/nuget.svg)](https://www.nuget.org/packages/Analogy.DataProviders.Extensions/) [![Build Status](https://dev.azure.com/Analogy-LogViewer/Analogy%20Log%20Viewer/_apis/build/status/Analogy-LogViewer.Analogy.DataProviders.Extensions?branchName=master)](https://dev.azure.com/Analogy-LogViewer/Analogy%20Log%20Viewer/_build/latest?definitionId=9&branchName=master)
 Extension DLL for dataproviders to add UI Functionality (like user settings and others)

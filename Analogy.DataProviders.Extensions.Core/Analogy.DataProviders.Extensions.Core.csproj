@@ -3,12 +3,15 @@
   <PropertyGroup>
     <OutputType>Library</OutputType>
     <TargetFramework>netcoreapp3.0</TargetFramework>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <UseWindowsForms>true</UseWindowsForms>
     <ApplicationIcon />
     <StartupObject />
     <AssemblyName>Analogy.DataProviders.Extensions</AssemblyName>
     <RootNamespace>Analogy.DataProviders.Extensions</RootNamespace>
-    <Version>1.0.2.0</Version>
+    <Version>1.0.3.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
@@ -20,7 +23,15 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Analogy.LogViewer.Interfaces" Version="2.1.7" />
+    <PackageReference Include="Analogy.LogViewer.Interfaces" Version="2.1.7.3" />
+    <PackageReference Include="Microsoft.Build.Tasks.Git" Version="1.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
   </ItemGroup>
 

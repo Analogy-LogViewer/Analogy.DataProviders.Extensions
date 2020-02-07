@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Analogy.Interfaces.DataTypes;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Analogy.DataProviders.Extensions.UnitTests

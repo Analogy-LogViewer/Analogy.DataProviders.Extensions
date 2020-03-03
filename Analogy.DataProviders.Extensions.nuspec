@@ -26,7 +26,7 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="Analogy.DataProviders.Extensions\bin\net472\Release\Analogy.DataProviders.Extensions.dll" target="lib\net472\Analogy.DataProviders.Extensions.dll" />
+    <file src="Analogy.DataProviders.Extensions\bin\Release\net472\Analogy.DataProviders.Extensions.dll" target="lib\net472\Analogy.DataProviders.Extensions.dll" />
     <file src="Analogy.DataProviders.Extensions.Core\bin\Release\netcoreapp3.0\Analogy.DataProviders.Extensions.dll" target="lib\netcoreapp3.0\Analogy.DataProviders.Extensions.dll" />
     <file src="Analogy.DataProviders.Extensions.Core\bin\Release\netcoreapp3.0\Analogy.DataProviders.Extensions.deps.json" target="lib\netcoreapp3.0\Analogy.DataProviders.Extensions.deps.json" />
     <file src="icon.png" target="" />

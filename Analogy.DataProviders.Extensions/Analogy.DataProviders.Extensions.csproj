@@ -1,33 +1,28 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
   <PropertyGroup>
-    <TargetFramework>net472</TargetFramework>
-	  <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <TargetFrameworks>net472;netcoreapp3.1</TargetFrameworks>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
-    <AssemblyTitle>Analogy.DataProviders.Extensions</AssemblyTitle>
-    <Product>Analogy.DataProviders.Extensions</Product>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationIcon />
+    <StartupObject />
+    <AssemblyName>Analogy.DataProviders.Extensions</AssemblyName>
+    <RootNamespace>Analogy.DataProviders.Extensions</RootNamespace>
+    <Version>1.0.4.1</Version>
+    <Authors>Lior Banai</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <Copyright>Lior Banai ©  2020</Copyright>
-    <AssemblyVersion>1.0.4.0</AssemblyVersion>
-    <FileVersion>1.0.4.0</FileVersion>
-    <OutputPath>bin\$(Configuration)\</OutputPath>
-    <DebugSymbols>true</DebugSymbols>
-  </PropertyGroup>
-  <PropertyGroup>
-    <ApplicationIcon>Analogy_logo1.ico</ApplicationIcon>
+    <PackageProjectUrl>https://github.com/Analogy-LogViewer/Analogy.DataProviders.Extensions</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Analogy-LogViewer/Analogy.DataProviders.Extensions</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Net.Http" />
+    <None Remove="Analogy_logo1.ico" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="AnalogyColumnsMatcherUC.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Update="AnalogyColumnsMatcherUC.Designer.cs">
-      <DependentUpon>AnalogyColumnsMatcherUC.cs</DependentUpon>
-    </Compile>
+    <Content Include="Analogy_logo1.ico" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Analogy.LogViewer.Interfaces" Version="2.1.8" />
@@ -40,11 +35,16 @@
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="AnalogyColumnsMatcherUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="AnalogyColumnsMatcherUC.Designer.cs">
+      <DependentUpon>AnalogyColumnsMatcherUC.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
     <EmbeddedResource Update="AnalogyColumnsMatcherUC.resx">
       <DependentUpon>AnalogyColumnsMatcherUC.cs</DependentUpon>
     </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Analogy_logo1.ico" />
   </ItemGroup>
 </Project>

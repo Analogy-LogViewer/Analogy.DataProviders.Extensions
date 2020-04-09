@@ -15,7 +15,7 @@
 <a href="https://github.com/Analogy-LogViewer/Analogy.DataProviders.Extensions/releases">
     <img src="https://img.shields.io/github/v/release/Analogy-LogViewer/Analogy.DataProviders.Extensions" img alt="Latest Release"/>
 </a>
-<a href="https://github.com/Analogy-LogViewer/Analogy.DataProviders.Extensions/compare/V1.0.7...master">
+<a href="https://github.com/Analogy-LogViewer/Analogy.DataProviders.Extensions/compare/V1.1.0...master">
     <img src="https://img.shields.io/github/commits-since/Analogy-LogViewer/Analogy.DataProviders.Extensions/latest" img alt="Commits Since Latest Release"/>
 </a>
 </p>

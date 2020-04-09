@@ -9,8 +9,9 @@
 <a href="https://github.com/Analogy-LogViewer/Analogy.DataProviders.Extensions/blob/master/LICENSE.md">
     <img src="https://img.shields.io/github/license/Analogy-LogViewer/Analogy.DataProviders.Extensions" img alt="License"/>
 </a>
-
  [![Nuget](https://img.shields.io/nuget/dt/Analogy.DataProviders.Extensions)](https://www.nuget.org/packages/Analogy.DataProviders.Extensions/)
+ 
+ [![Nuget](https://img.shields.io/nuget/v/Analogy.LogViewer.Serilog)](https://www.nuget.org/packages/Analogy.LogViewer.Serilog/)
 <a href="https://github.com/Analogy-LogViewer/Analogy.DataProviders.Extensions/releases">
     <img src="https://img.shields.io/github/v/release/Analogy-LogViewer/Analogy.DataProviders.Extensions" img alt="Latest Release"/>
 </a>

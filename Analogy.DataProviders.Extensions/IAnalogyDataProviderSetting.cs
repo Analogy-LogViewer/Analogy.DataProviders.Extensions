@@ -21,7 +21,10 @@ namespace Analogy.DataProviders.Extensions
         /// to which Analogy Factory this user setting belong t0
         /// </summary>
         Guid FactoryId { get; set; }
-
+        /// <summary>
+        /// The id of this item
+        /// </summary>
+        Guid ID { get; set; }
         Task SaveSettingsAsync();
     }
 

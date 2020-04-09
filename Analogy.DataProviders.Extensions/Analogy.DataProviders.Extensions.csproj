@@ -9,26 +9,24 @@
     <StartupObject />
     <AssemblyName>Analogy.DataProviders.Extensions</AssemblyName>
     <RootNamespace>Analogy.DataProviders.Extensions</RootNamespace>
-    <Version>1.0.4.3</Version>
+    <Version>1.1.0</Version>
     <Authors>Lior Banai</Authors>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <Copyright>Lior Banai ©  2020</Copyright>
+    <Copyright>Lior Banai © 2020</Copyright>
     <PackageProjectUrl>https://github.com/Analogy-LogViewer/Analogy.DataProviders.Extensions</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Analogy-LogViewer/Analogy.DataProviders.Extensions</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageIcon>icon.png</PackageIcon>
     <PackageIconUrl />
+    <Description>Extension DLL for data providers for adding UI Functionality (like user settings and others)</Description>
+    <PackageReleaseNotes>Add interface for supplying images for  data providers</PackageReleaseNotes>
   </PropertyGroup>
   <ItemGroup>
-    <None Remove="Analogy_logo1.ico" />
     <None Include="..\icon.png">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Analogy_logo1.ico" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Analogy.LogViewer.Interfaces" Version="2.2.0" />

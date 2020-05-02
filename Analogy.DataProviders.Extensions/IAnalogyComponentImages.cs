@@ -9,7 +9,6 @@ namespace Analogy.DataProviders.Extensions
 {
     public interface IAnalogyComponentImages
     {
-        IEnumerable<DataProviderImages> GetDataProviderImages();
         Image GetLargeImage(Guid analogyComponentId);
         Image GetSmallImage(Guid analogyComponentId);
         Image GetOnlineConnectedLargeImage(Guid analogyComponentId);

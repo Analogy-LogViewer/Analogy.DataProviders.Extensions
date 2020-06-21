@@ -9,7 +9,7 @@
     <StartupObject />
     <AssemblyName>Analogy.DataProviders.Extensions</AssemblyName>
     <RootNamespace>Analogy.DataProviders.Extensions</RootNamespace>
-    <Version>1.1.4</Version>
+    <Version>1.1.5</Version>
     <Authors>Lior Banai</Authors>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <Copyright>Lior Banai © 2020</Copyright>

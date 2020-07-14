@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
   <PropertyGroup>
-    <TargetFrameworks>net472;netcoreapp3.1</TargetFrameworks>
+    <TargetFrameworks>net472;netcoreapp3.1;net471</TargetFrameworks>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
@@ -9,7 +9,7 @@
     <StartupObject />
     <AssemblyName>Analogy.DataProviders.Extensions</AssemblyName>
     <RootNamespace>Analogy.DataProviders.Extensions</RootNamespace>
-    <Version>1.1.6</Version>
+    <Version>1.1.7</Version>
     <Authors>Lior Banai</Authors>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <Copyright>Lior Banai © 2020</Copyright>
@@ -20,8 +20,9 @@
     <PackageIcon>icon.png</PackageIcon>
     <PackageIconUrl />
     <Description>Extension DLL for data providers for adding UI Functionality (like user settings and others)</Description>
-    <PackageReleaseNotes>Update with Interface DLL changes</PackageReleaseNotes>
+    <PackageReleaseNotes>Add net471 target</PackageReleaseNotes>
     <Company>Analogy.LogViewer</Company>
+    <AssemblyVersion>1.1.7.0</AssemblyVersion>
   </PropertyGroup>
   <ItemGroup>
     <None Include="..\icon.png">

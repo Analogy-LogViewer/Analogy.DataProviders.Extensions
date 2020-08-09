@@ -9,7 +9,7 @@
 		<StartupObject />
 		<AssemblyName>Analogy.DataProviders.Extensions</AssemblyName>
 		<RootNamespace>Analogy.DataProviders.Extensions</RootNamespace>
-		<Version>1.1.7.1</Version>
+		<Version>1.1.7.2</Version>
 		<Authors>Lior Banai</Authors>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<Copyright>Lior Banai © 2020</Copyright>
@@ -20,9 +20,9 @@
 		<PackageIcon>icon.png</PackageIcon>
 		<PackageIconUrl />
 		<Description>Extension DLL for data providers for adding UI Functionality (like user settings and others)</Description>
-		<PackageReleaseNotes>Add net471 target</PackageReleaseNotes>
+		<PackageReleaseNotes></PackageReleaseNotes>
 		<Company>Analogy.LogViewer</Company>
-		<AssemblyVersion>1.1.7.1</AssemblyVersion>
+		<AssemblyVersion>1.1.7.2</AssemblyVersion>
 		<GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
 	</PropertyGroup>
 	<ItemGroup>
@@ -33,7 +33,7 @@
 	</ItemGroup>
 	<ItemGroup>
 		<PackageReference Include="System.Resources.Extensions" Version="4.6.0" />
-		<PackageReference Include="Analogy.LogViewer.Interfaces" Version="2.3.1.1" />
+		<PackageReference Include="Analogy.LogViewer.Interfaces" Version="2.3.2.5" />
 		<PackageReference Include="Microsoft.Build.Tasks.Git" Version="1.0.0">
 			<PrivateAssets>all</PrivateAssets>
 		</PackageReference>
@@ -43,16 +43,16 @@
 		<PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
 	</ItemGroup>
 	<ItemGroup>
-		<Compile Update="AnalogyColumnsMatcherUC.cs">
+		<Compile Update="AnalogyPropertiesMatcherUC.cs">
 			<SubType>UserControl</SubType>
 		</Compile>
-		<Compile Update="AnalogyColumnsMatcherUC.Designer.cs">
-			<DependentUpon>AnalogyColumnsMatcherUC.cs</DependentUpon>
+		<Compile Update="AnalogyPropertiesMatcherUC.Designer.cs">
+			<DependentUpon>AnalogyPropertiesMatcherUC.cs</DependentUpon>
 		</Compile>
 	</ItemGroup>
 	<ItemGroup>
-		<EmbeddedResource Update="AnalogyColumnsMatcherUC.resx">
-			<DependentUpon>AnalogyColumnsMatcherUC.cs</DependentUpon>
+		<EmbeddedResource Update="AnalogyPropertiesMatcherUC.resx">
+			<DependentUpon>AnalogyPropertiesMatcherUC.cs</DependentUpon>
 		</EmbeddedResource>
 	</ItemGroup>
 </Project>

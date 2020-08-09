@@ -107,6 +107,7 @@ namespace Analogy.DataProviders.Extensions
         {
             pnlFill.Controls.Add(Properties);
             Properties.Dock = DockStyle.Fill;
+            LoadJsonSettings();
         }
 
         public void SetExtensions(List<string> extensions)

@@ -27,8 +27,12 @@ namespace Analogy.DataProviders.Extensions
         }
         private void AnalogyPropertiesMatcherUC_Load(object sender, EventArgs e)
         {
-            cbLogProperties.DataSource = AnalogyLogMessage.AnalogyLogMessagePropertyNames.Values;
+            cbLogProperties.DataSource = AnalogyLogMessage.AnalogyLogMessagePropertyNames.Values.ToList();
             cbLogProperties.DropDownStyle = ComboBoxStyle.DropDownList;
+            Selection = (AnalogyLogMessagePropertyName) cbLogProperties.SelectedItem;
+            UpdateMappings();
+            cbLogProperties.SelectedIndexChanged += this.cbLogProperties_SelectedIndexChanged;
+
         }
 
         private void cbLogProperties_SelectedIndexChanged(object sender, EventArgs e)
@@ -67,6 +71,7 @@ namespace Analogy.DataProviders.Extensions
             if (lstbMappedKeys.SelectedItem != null)
             {
                 ParserSettings.DeleteMap(Selection, lstbMappedKeys.SelectedItem as string);
+                UpdateMappings();
             }
         }
     }

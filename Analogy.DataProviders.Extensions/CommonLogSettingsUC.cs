@@ -21,12 +21,14 @@ namespace Analogy.DataProviders.Extensions
         public CommonLogSettingsUC()
         {
             InitializeComponent();
-            Properties=new AnalogyPropertiesMatcherUC();
+            Properties = new AnalogyPropertiesMatcherUC();
         }
 
-        public CommonLogSettingsUC(ILogParserSettings parserSettings):this()
+        public CommonLogSettingsUC(ILogParserSettings parserSettings)
         {
             ParserSettings = parserSettings;
+            InitializeComponent();
+            Properties = new AnalogyPropertiesMatcherUC(parserSettings);
         }
         private void btnImport_Click(object sender, EventArgs e)
         {
@@ -106,7 +108,20 @@ namespace Analogy.DataProviders.Extensions
             pnlFill.Controls.Add(Properties);
             Properties.Dock = DockStyle.Fill;
         }
-    }
 
-    
+        public void SetExtensions(List<string> extensions)
+        {
+            if (extensions != null && extensions.Any())
+            {
+                ParserSettings.SupportedFilesExtensions = extensions;
+                txtLogExtension.Text = string.Join(";", ParserSettings.SupportedFilesExtensions);
+            }
+        }
+        public void SetDefaultDirectory(string dir)
+        {
+            ParserSettings.Directory = dir;
+            txtbLogDirectory.Text = dir;
+        }
+    }
 }
+

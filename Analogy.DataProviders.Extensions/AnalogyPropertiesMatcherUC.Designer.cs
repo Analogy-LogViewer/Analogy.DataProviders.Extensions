@@ -34,11 +34,11 @@ namespace Analogy.DataProviders.Extensions
             this.cbLogProperties = new System.Windows.Forms.ComboBox();
             this.lblLog = new System.Windows.Forms.Label();
             this.pnlTop = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtKey = new System.Windows.Forms.TextBox();
             this.lstbMappedKeys = new System.Windows.Forms.ListBox();
             this.lblInfo = new System.Windows.Forms.Label();
             this.btnAddKey = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtKey = new System.Windows.Forms.TextBox();
             this.btnDeleteSelection = new System.Windows.Forms.Button();
             this.lblSelection = new System.Windows.Forms.Label();
             this.pnlTop.SuspendLayout();
@@ -46,13 +46,13 @@ namespace Analogy.DataProviders.Extensions
             // 
             // cbLogProperties
             // 
-            this.cbLogProperties.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbLogProperties.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.cbLogProperties.FormattingEnabled = true;
             this.cbLogProperties.Location = new System.Drawing.Point(286, 5);
             this.cbLogProperties.Name = "cbLogProperties";
             this.cbLogProperties.Size = new System.Drawing.Size(399, 24);
             this.cbLogProperties.TabIndex = 11;
-            this.cbLogProperties.SelectedIndexChanged += new System.EventHandler(this.cbLogProperties_SelectedIndexChanged);
             // 
             // lblLog
             // 
@@ -75,15 +75,33 @@ namespace Analogy.DataProviders.Extensions
             this.pnlTop.Size = new System.Drawing.Size(688, 70);
             this.pnlTop.TabIndex = 13;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(8, 42);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(120, 17);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "Add key/property:";
+            // 
+            // txtKey
+            // 
+            this.txtKey.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtKey.Location = new System.Drawing.Point(286, 39);
+            this.txtKey.Name = "txtKey";
+            this.txtKey.Size = new System.Drawing.Size(298, 22);
+            this.txtKey.TabIndex = 14;
+            // 
             // lstbMappedKeys
             // 
             this.lstbMappedKeys.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.lstbMappedKeys.FormattingEnabled = true;
             this.lstbMappedKeys.ItemHeight = 16;
-            this.lstbMappedKeys.Location = new System.Drawing.Point(17, 105);
+            this.lstbMappedKeys.Location = new System.Drawing.Point(6, 102);
             this.lstbMappedKeys.Name = "lstbMappedKeys";
-            this.lstbMappedKeys.Size = new System.Drawing.Size(183, 164);
+            this.lstbMappedKeys.Size = new System.Drawing.Size(183, 292);
             this.lstbMappedKeys.TabIndex = 14;
             this.lstbMappedKeys.SelectedIndexChanged += new System.EventHandler(this.lstbMappedKeys_SelectedIndexChanged);
             // 
@@ -109,28 +127,9 @@ namespace Analogy.DataProviders.Extensions
             this.btnAddKey.UseVisualStyleBackColor = true;
             this.btnAddKey.Click += new System.EventHandler(this.btnAddKey_Click);
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(8, 42);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(120, 17);
-            this.label2.TabIndex = 13;
-            this.label2.Text = "Add key/property:";
-            // 
-            // txtKey
-            // 
-            this.txtKey.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtKey.Location = new System.Drawing.Point(286, 39);
-            this.txtKey.Name = "txtKey";
-            this.txtKey.Size = new System.Drawing.Size(298, 22);
-            this.txtKey.TabIndex = 14;
-            // 
             // btnDeleteSelection
             // 
-            this.btnDeleteSelection.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnDeleteSelection.Location = new System.Drawing.Point(537, 263);
+            this.btnDeleteSelection.Location = new System.Drawing.Point(206, 135);
             this.btnDeleteSelection.Name = "btnDeleteSelection";
             this.btnDeleteSelection.Size = new System.Drawing.Size(148, 32);
             this.btnDeleteSelection.TabIndex = 17;
@@ -142,10 +141,10 @@ namespace Analogy.DataProviders.Extensions
             // 
             this.lblSelection.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblSelection.Location = new System.Drawing.Point(14, 271);
+            this.lblSelection.Location = new System.Drawing.Point(206, 105);
             this.lblSelection.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblSelection.Name = "lblSelection";
-            this.lblSelection.Size = new System.Drawing.Size(311, 25);
+            this.lblSelection.Size = new System.Drawing.Size(479, 25);
             this.lblSelection.TabIndex = 18;
             this.lblSelection.Text = "Selection:";
             // 
@@ -160,7 +159,7 @@ namespace Analogy.DataProviders.Extensions
             this.Controls.Add(this.lstbMappedKeys);
             this.Controls.Add(this.pnlTop);
             this.Name = "AnalogyPropertiesMatcherUC";
-            this.Size = new System.Drawing.Size(688, 298);
+            this.Size = new System.Drawing.Size(688, 397);
             this.Load += new System.EventHandler(this.AnalogyPropertiesMatcherUC_Load);
             this.pnlTop.ResumeLayout(false);
             this.pnlTop.PerformLayout();

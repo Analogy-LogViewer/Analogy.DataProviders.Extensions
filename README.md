@@ -1,4 +1,5 @@
-# Analogy Data Providers Extensions    [![Nuget](https://img.shields.io/nuget/dt/Analogy.DataProviders.Extensions)](https://www.nuget.org/packages/Analogy.DataProviders.Extensions/)
+# Analogy Data Providers Extensions    [![Nuget](https://img.shields.io/nuget/dt/Analogy.DataProviders.Extensions)](https://www.nuget.org/packages/Analogy.DataProviders.Extensions/)     <img src="./Assets/Analogy_logo1.png" align="right" width="155px" height="155px">
+
 
 <p align="center">
   

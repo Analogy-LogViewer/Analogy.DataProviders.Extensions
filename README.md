@@ -20,3 +20,6 @@
     <img src="https://img.shields.io/github/commits-since/Analogy-LogViewer/Analogy.DataProviders.Extensions/latest" img alt="Commits Since Latest Release"/>
 </a>
 </p>
+
+
+This repository was consolidated with [Analogy.Interfaces repository](https://github.com/Analogy-LogViewer/Analogy.Interfaces)

@@ -27,7 +27,7 @@ namespace Analogy.DataProviders.Extensions
         }
         private void AnalogyPropertiesMatcherUC_Load(object sender, EventArgs e)
         {
-            cbLogProperties.DataSource = AnalogyLogMessage.AnalogyLogMessagePropertyNames.Values.ToList();
+            cbLogProperties.DataSource = AnalogyLogMessage.LogMessagePropertyNames.Values.ToList();
             cbLogProperties.DropDownStyle = ComboBoxStyle.DropDownList;
             Selection = (AnalogyLogMessagePropertyName) cbLogProperties.SelectedItem;
             UpdateMappings();

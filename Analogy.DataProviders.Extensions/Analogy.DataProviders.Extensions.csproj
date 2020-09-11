@@ -9,7 +9,7 @@
 		<StartupObject />
 		<AssemblyName>Analogy.DataProviders.Extensions</AssemblyName>
 		<RootNamespace>Analogy.DataProviders.Extensions</RootNamespace>
-		<Version>1.1.7.5</Version>
+		<Version>1.2.0</Version>
 		<Authors>Lior Banai</Authors>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<Copyright>Lior Banai © 2020</Copyright>
@@ -22,8 +22,9 @@
 		<Description>Extension DLL for data providers for adding UI Functionality (like user settings and others)</Description>
 		<PackageReleaseNotes></PackageReleaseNotes>
 		<Company>Analogy.LogViewer</Company>
-		<AssemblyVersion>1.1.7.5</AssemblyVersion>
+		<AssemblyVersion>1.2.0.0</AssemblyVersion>
 		<GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
+		<FileVersion>1.2.0.0</FileVersion>
 	</PropertyGroup>
 	<ItemGroup>
 		<None Include="..\icon.png">
